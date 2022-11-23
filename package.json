@@ -1,0 +1,33 @@
+{
+  "name": "prometheus",
+  "version": "0.0.1",
+  "description": "A backend for online education tracking, both the development thereof and production environments",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": "~18.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/established-1907/prometheus.git"
+  },
+  "keywords": [
+    "fastify",
+    "training",
+    "records",
+    "mongodb",
+    "openapi"
+  ],
+  "author": {
+    "name": "Anthony Jackman",
+    "email": "anthony.jackman@serco-na.com",
+    "url": "https://linkedin.com/in/anthony-jackman-60b59110/"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/established-1907/prometheus/issues"
+  },
+  "homepage": "https://github.com/established-1907/prometheus#readme"
+}
