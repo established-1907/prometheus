@@ -1,0 +1,98 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true,
+        "mocha": true
+    },
+    "plugins": [
+        "prettier",
+        "chai-expect"
+    ],
+    "extends": [
+        "standard",
+        "plugin:prettier/recommended",
+        "plugin:n/recommended"
+    ],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "strict": [
+            "error",
+            "global"
+        ],
+        "no-var": "error",
+        "curly": "warn",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-tabs": [
+            "off",
+            "always"
+        ],
+        "new-cap": "off",
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "variables": false
+            }
+        ],
+        "no-console": [
+            "warn",
+            {
+                "allow": [
+                    "time",
+                    "timeEnd"
+                ]
+            }
+        ],
+        "require-jsdoc": "off",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 125,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ],
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "complexity": [
+            "warn",
+            {
+                "max": 10
+            }
+        ],
+        "chai-expect/no-inner-compare": "error",
+        "chai-expect/no-inner-literal": "error",
+        "chai-expect/missing-assertion": "error",
+        "chai-expect/terminating-properties": "error",
+        "n/exports-style": ["warn", "module.exports"],
+        "n/file-extension-in-import": ["error", "always"],
+        "n/prefer-global/buffer": ["error", "always"],
+        "n/prefer-global/console": ["warn", "always"],
+        "n/prefer-global/process": ["warn", "always"],
+        "n/prefer-global/url-search-params": ["error", "always"],
+        "n/prefer-global/url": ["error", "always"],
+        "n/prefer-promises/dns": "error",
+        "n/prefer-promises/fs": "error",
+        "n/no-deprecated-api": "warn",
+        "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    }
+}
