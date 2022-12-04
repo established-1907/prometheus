@@ -8,6 +8,7 @@ In Greek mythology, Prometheus is a Titan god of fire. Prometheus is best known 
 
 ## Badges
 ![GitHub](https://img.shields.io/github/license/established-1907/prometheus?color=informational&style=plastic)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 ## Features
 - OpenAPI version 3.0 specs
