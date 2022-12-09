@@ -2,7 +2,14 @@ import fastify from 'fastify';
 
 import { build } from './app.js';
 
-const app = build({ logger: true });
+const app = build({
+  logger: {
+    level: 'debug',
+    transport: {
+      target: 'pino-pretty'
+    }
+  }
+});
 
 const startServer = async () => {
   try {

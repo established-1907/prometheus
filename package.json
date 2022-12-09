@@ -1,14 +1,15 @@
 {
   "name": "prometheus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A backend for online education tracking, both the development thereof and production environments",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
+    "test": "tap ./test/**/*.js | tap-spec",
+    "coverrpt": "tap ./test/**/*.js --coverage --coverage-report=html",
     "dev": "nodemon server/server",
     "start": "node server/server",
-    "lint": "eslint --cache \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint --color --cache --env-info \"server/**/*.{js,jsx,ts,tsx}\""
   },
   "engines": {
     "node": "~16.7.1"
@@ -35,20 +36,19 @@
   },
   "homepage": "https://github.com/established-1907/prometheus#readme",
   "devDependencies": {
-    "chai": "^4.3.7",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-chai-expect": "^3.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
-    "mocha": "^10.1.0",
+    "eslint-plugin-tap": "^1.2.1",
     "nodemon": "^2.0.20",
     "pino-pretty": "^9.1.1",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.0",
+    "tap": "^16.3.2",
+    "tap-nyc": "^1.0.3",
+    "tap-spec": "^5.0.0"
   },
   "dependencies": {
     "fastify": "^4.10.2"
