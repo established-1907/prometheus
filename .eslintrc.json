@@ -1,17 +1,18 @@
 {
     "env": {
         "es2021": true,
-        "node": true,
-        "mocha": true
+        "node": true
     },
     "plugins": [
         "prettier",
-        "chai-expect"
+        // "import",
+        "tap"
     ],
     "extends": [
         "standard",
         "plugin:prettier/recommended",
-        "plugin:n/recommended"
+        "plugin:n/recommended" // ,
+        // "plugin:import/recommended"
     ],
     "overrides": [],
     "parserOptions": {
@@ -79,20 +80,62 @@
                 "max": 10
             }
         ],
-        "chai-expect/no-inner-compare": "error",
-        "chai-expect/no-inner-literal": "error",
-        "chai-expect/missing-assertion": "error",
-        "chai-expect/terminating-properties": "error",
-        "n/exports-style": ["warn", "module.exports"],
-        "n/file-extension-in-import": ["error", "always"],
-        "n/prefer-global/buffer": ["error", "always"],
-        "n/prefer-global/console": ["warn", "always"],
-        "n/prefer-global/process": ["warn", "always"],
-        "n/prefer-global/url-search-params": ["error", "always"],
-        "n/prefer-global/url": ["error", "always"],
+        "n/exports-style": [
+            "warn",
+            "module.exports"
+        ],
+        "n/file-extension-in-import": [
+            "error",
+            "always"
+        ],
+        "n/prefer-global/process": [
+            "warn",
+            "always"
+        ],
+        "n/prefer-global/url-search-params": [
+            "error",
+            "always"
+        ],
+        "n/prefer-global/url": [
+            "error",
+            "always"
+        ],
         "n/prefer-promises/dns": "error",
         "n/prefer-promises/fs": "error",
-        "n/no-deprecated-api": "warn",
-        "prettier/prettier": ["error", { "endOfLine": "auto" }]
+        "n/no-deprecated-api": "error",
+        "n/no-unpublished-import": "warn",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
+        // "tap/assertion-message": [
+        //     "error",
+        //     "always"
+        // ],
+        // "tap/max-asserts": [
+        //     "error",
+        //     8
+        // ],
+        // "tap/no-identical-title": "error",
+        // "tap/no-ignored-test-files": "error",
+        // "tap/no-only-test": "error",
+        // "tap/no-skip-test": "error",
+        // "tap/no-statement-after-end": "error",
+        // "tap/no-unknown-modifiers": "error",
+        // "tap/test-ended": "error",
+        // "tap/test-title": [
+        //     "error",
+        //     "if-multiple"
+        // ],
+        // "tap/use-plan": [
+        //     "error",
+        //     "always"
+        // ],
+        // "tap/use-plan-well": "error",
+        // "tap/use-t-well": "error",
+        // "tap/use-t": "error",
+        // "tap/use-tap": "error"
     }
 }

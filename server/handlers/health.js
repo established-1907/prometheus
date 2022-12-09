@@ -1,5 +1,5 @@
 const getHealth = (req, reply) => {
-  return reply.send({ say: 'I am super bad' });
+  return reply.code(200).send({ say: 'Pong. I am here' });
 };
 
 export default getHealth;
