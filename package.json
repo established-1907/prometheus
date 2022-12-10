@@ -36,10 +36,10 @@
   },
   "homepage": "https://github.com/established-1907/prometheus#readme",
   "devDependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-tap": "^1.2.1",
