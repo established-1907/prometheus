@@ -6,7 +6,7 @@
     "plugins": [
         "prettier",
         // "import",
-        "tap"
+        "tape"
     ],
     "extends": [
         "standard",
@@ -100,42 +100,42 @@
             "error",
             "always"
         ],
-        "n/prefer-promises/dns": "error",
-        "n/prefer-promises/fs": "error",
         "n/no-deprecated-api": "error",
-        "n/no-unpublished-import": "warn",
+        "n/no-unpublished-import": [
+            "warn",
+            {
+                "allowModules": [
+                    "tape"
+                ]
+            }
+        ],
         "prettier/prettier": [
             "error",
             {
                 "endOfLine": "auto"
             }
+        ],
+        "tape/assertion-message": [
+            "error",
+            "always"
+        ],
+        "tape/max-asserts": [
+            "error",
+            8
+        ],
+        "tape/no-identical-title": "error",
+        "tape/no-statement-after-end": "error",
+        "tape/test-title": [
+            "error",
+            "if-multiple"
         ]
-        // "tap/assertion-message": [
-        //     "error",
-        //     "always"
-        // ],
-        // "tap/max-asserts": [
-        //     "error",
-        //     8
-        // ],
-        // "tap/no-identical-title": "error",
-        // "tap/no-ignored-test-files": "error",
-        // "tap/no-only-test": "error",
-        // "tap/no-skip-test": "error",
-        // "tap/no-statement-after-end": "error",
-        // "tap/no-unknown-modifiers": "error",
-        // "tap/test-ended": "error",
-        // "tap/test-title": [
-        //     "error",
-        //     "if-multiple"
-        // ],
-        // "tap/use-plan": [
-        //     "error",
-        //     "always"
-        // ],
-        // "tap/use-plan-well": "error",
-        // "tap/use-t-well": "error",
-        // "tap/use-t": "error",
-        // "tap/use-tap": "error"
+        // "tape/no-ignored-test-files": "error",
+        // "tape/no-only-test": "error",
+        // "tape/no-skip-test": "error",
+        // "tape/no-unknown-modifiers": "error",
+        // "tape/test-ended": "error",
+        // "tape/use-t-well": "error",
+        // "tape/use-t": "error",
+        // "tape/use-tap": "error"
     }
 }

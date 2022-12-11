@@ -2,7 +2,7 @@ import fastify from 'fastify';
 import healthRoute from './routes/api/health.js';
 import fs from 'fs';
 
-const contents = fs.readFileSync('package.json');
+const contents = fs.readFileSync('package.json', 'utf-8');
 const openapiopts = {
   openapi: {
     info: {
