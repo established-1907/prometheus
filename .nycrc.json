@@ -1,0 +1,16 @@
+{
+  "all": true,
+  "include": [
+    "server/**/*.js"
+  ],
+  "exclude": [
+    "**/*.spec.js",
+    "server/app.js",
+    "server/server.js"
+  ],
+  "reporter": [
+    "html",
+    "text"
+  ],
+  "check-coverage": false
+}
