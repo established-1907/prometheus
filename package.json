@@ -46,7 +46,7 @@
     "nodemon": "^2.0.20",
     "nyc": "^15.1.0",
     "pino-pretty": "^9.1.1",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "tap-nyc": "^1.0.3",
     "tap-spec": "^5.0.0",
     "tape": "^5.6.1"
